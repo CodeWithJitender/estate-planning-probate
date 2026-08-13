@@ -108,22 +108,13 @@ img {
     color: #121323;
 }
 
-.hero-sub {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #444;
-    margin-top: 16px;
-    max-width: 480px;
-}
-
 .hero-content p {
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 17px;
+    margin-top: 28px;
     max-width: 400px;
     font-weight: 400;
-    line-height: 24px;
-    color: #555;
+    line-height: 26px;
+    color: #333;
 }
 
 /* Typed Text */
@@ -642,7 +633,16 @@ h5.support-title {
     font-weight: 600;
 }
 
-/* Left column (support-col-right) - aligned to the right on desktop, towards the center line */
+/* Left column (support-col-right) — aligned to the right on desktop, towards the center line */
+.support-col-right {
+    text-align: right;
+}
+
+.support-col-right .support-title,
+.support-col-right .support-subtitle {
+    text-align: right;
+}
+
 .support-col-right .support-list li {
     padding-right: 24px;
     padding-left: 0;
@@ -656,10 +656,8 @@ h5.support-title {
 
 .vertical-line {
     border-left: 2px solid #D0AE88;
-    height: auto;
-    min-height: 340px;
-    -ms-flex-item-align: stretch;
-        align-self: stretch;
+    height: 100%;
+    min-height: 220px;
     opacity: 0.3;
 }
 
@@ -1546,9 +1544,10 @@ h5.support-title {
         -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+        padding: 10px;
     }
     .support-col {
-        text-align: center !important;
+        text-align: left !important;
         max-width: 400px;
         margin: 0 auto;
     }
@@ -1568,7 +1567,7 @@ h5.support-title {
     .support-col-right p,
     .support-col h5,
     .support-col p.support-subtitle {
-        text-align: center !important;
+        text-align: left !important;
     }
     .support-section .support-col:first-child {
         padding-bottom: 30px;
